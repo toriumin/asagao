@@ -26,4 +26,34 @@ class LessonController < ApplicationController
     def step7
         @price = (2000 * 1.08).floor
     end
+
+    def step8
+        @price = 1000
+        render "step7"
+    end
+
+    def step9
+        @comment = "<script>alert('危険！')</script>こんにちは。"
+    end
+
+    def step10
+        @comment = "<strong>安全なHTML</strong>"
+    end
+
+    def step11
+        @population =  704414
+        @surface = 141.31
+    end
+
+    def step12
+        @time = Time.current
+    end
+
+    def step13
+        @population = 1237767944
+    end
+
+    def step14
+        @message = "ごきげんいかが？\nRailsの勉強をがんばりましょう"
+    end
 end
