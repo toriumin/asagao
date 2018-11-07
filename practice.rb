@@ -1,4 +1,7 @@
-require "active_support/all"
+s1 = "hello"
+s2 = s1
+puts s1.object_id
+puts s2.object_id
 
-time = Time.current
-puts time.strftime("%Y/%m/%d %H:%M")
+s1.upcase!
+puts s2
